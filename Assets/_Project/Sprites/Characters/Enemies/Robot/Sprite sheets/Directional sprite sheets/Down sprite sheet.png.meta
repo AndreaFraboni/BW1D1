@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -95,7 +95,2065 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Down sprite sheet_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1017
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fbff25b66e91bf40bfb9b99dbc120e5
+      internalID: -1720221608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_1
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 1017
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 118adc445f9e9c24bbbc79da8152652d
+      internalID: 140780047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_2
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1017
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcdd92c59f38ed443abb31bac49f83d8
+      internalID: -1867332325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_3
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 1017
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f5e066991c3c840be2d8bf7ce949b2
+      internalID: -1184921057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_4
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 1017
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b3911cb3822bdb45829ab1013dffaad
+      internalID: -1028602186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_5
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 969
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f09ea5a62ebbcdd43bfd4a90ebc18de4
+      internalID: -1645006536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_6
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 969
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d1acf5b7a945fd499b0ffcd6c3089aa
+      internalID: -1737637719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_7
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 969
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b3e3b5970fc9fb48a977a4c9a0174f6
+      internalID: 1174897674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_8
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 969
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb5f0b34cbccad42838117dd9547429
+      internalID: 523060666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_9
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 969
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d3eb9998f6baf4ab8b46cb1ab2f570
+      internalID: 1820566312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_10
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 921
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 180c69d2cc89a1a4799631e04fa3187f
+      internalID: -1913485594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_11
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 921
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60381ec2a37d2d648a0d4a058bc73f46
+      internalID: -886053020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_12
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 921
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c27ed0dabd1d514cad91d192e10bf61
+      internalID: 471071041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_13
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 921
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fabf3299f831e2c469db69f276a70666
+      internalID: -293537531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_14
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 921
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c904edbc498436e44b53f3283fc25c2d
+      internalID: -295813041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_15
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 873
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 995faada19ef312488832e91ca3ad6db
+      internalID: -1002068368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_16
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 873
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21566671f27eb0a40a0ca3d398eebfeb
+      internalID: -1103663708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_17
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 873
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6c1030086991c540a6c9bc66f30a385
+      internalID: 970859039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_18
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 873
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c892661f2fb8a540aa7c006d669df7e
+      internalID: -1006332476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_19
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 873
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a184f3f7b6473974f8d1bf95861dd554
+      internalID: 1590572682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_20
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 824
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c3246959efd4d745b753016884a7034
+      internalID: -614867077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_21
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 823
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 017e5ee03f8259449b87507e96207e90
+      internalID: -943574897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_22
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 823
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aacfbb817712324a9da60d2ff935de1
+      internalID: -1122108727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_23
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 776
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57870bd979bdc5145abb81421c2bdc59
+      internalID: -219102002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_24
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 775
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ae4b771568a09f4c97cb1d84ca36deb
+      internalID: -2049825859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_25
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 775
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c49e8a2b92f944f8a1b8c000d774df
+      internalID: 854627717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_26
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 731
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f3c548c0b465c7449797a290f3fb236
+      internalID: 1987790580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_27
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 728
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9f2bd02100430d489abcdf356b2ade2
+      internalID: 617180133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_28
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 728
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca9f53a1924d2284ab26179bfdc29f55
+      internalID: -1815981584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_29
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 729
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9aba2caa920ad84b8d5de39086079a9
+      internalID: -1005237274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_30
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 729
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c4abcc7227d6634e8ef642c9ce9e9fb
+      internalID: -1367421355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_31
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 681
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f23c392aea98443ab645ca09d0bce5
+      internalID: -896657249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_32
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 681
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38158520b65a0504bba75758a0a7ff2e
+      internalID: -1757279823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_33
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 681
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c14d0e58d5ad79141bb3cec4378bab45
+      internalID: 393816239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_34
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 681
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 395ed44630ede204b8a7886a5e4176be
+      internalID: -850402234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_35
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 681
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a583eff6eeb47a47a8fad9cdce57da6
+      internalID: -493940611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_36
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 633
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5958bf100f2cc2145bad69bdd2f68ae8
+      internalID: -1610976427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_37
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 634
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9a42b1f49036e14185ced778cb18d5d
+      internalID: -415406432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_38
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 634
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a2da45b2a27414d807ceeabd5f6fc7
+      internalID: -245886993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_39
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 635
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a4b5deda46832743be1c82456b87c59
+      internalID: 1927941431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_40
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 635
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 851c0cbcf66a7e946a8c1dcdd021c38e
+      internalID: 580586532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_41
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 585
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 263b0a4740faee247b6628fb123a3563
+      internalID: -1811411268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_42
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 585
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 288066ca29f5c4b4c8ce38971d9f1250
+      internalID: 949595717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_43
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 585
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 227660cb54239e94fbcee779a88a807c
+      internalID: 189230294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_44
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 585
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fa384cf1c6f2ee40b95f18e8a189b3b
+      internalID: -2130907505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_45
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 537
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 109a639db1dbf2743b7f90a525856d77
+      internalID: 870186395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_46
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 537
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1376859971e1f543ab1a0ca116e5bd9
+      internalID: 903874140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_47
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 533
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c0108a477aaca47bdeb865b0cb2f9c
+      internalID: -1371564385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_48
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 534
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d4472e778753d944a342339c8637981
+      internalID: -310362838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_49
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 489
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 024c11a84c72bd64faef85f39e59aca2
+      internalID: -1659837162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_50
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 489
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d39ce673c60d47449b338f18f8380465
+      internalID: 2064191271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_51
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 489
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f974449aaac1e4e974305ebffe1310
+      internalID: -1407436026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_52
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 489
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4cfbb0e8191d5a479148e36a2fe0c89
+      internalID: -658700949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_53
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 489
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d63fc67b1ee7248b505c795623fb15
+      internalID: -377098349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_54
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 441
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c3388355f1ed5b4882bbba73e51c3f1
+      internalID: -1812332532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_55
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 441
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd904545c0155984197c56833cb6af44
+      internalID: 1564912365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_56
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 441
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc1594ee1c4d32544afa62239dfb214f
+      internalID: 57120357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_57
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 441
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d52403513df2e99469e6083e6e5d5709
+      internalID: 1628774658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_58
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 441
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 832ad500ebe490948807441a0267fbdb
+      internalID: 707326798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_59
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 393
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6c3b2ce9a4dcc8468ee1c748b6e8cf1
+      internalID: 1548049107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_60
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 393
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c132d4ed2efe40a40b469eee7d542685
+      internalID: 1390184729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_61
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 393
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0833c313c1e6e749b961bfc4e276254
+      internalID: -1267774714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_62
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 393
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af208606fd2413c479248a9878de9ff7
+      internalID: 775550593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_63
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 393
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b29f10f459c7724ca3f7957ab9b3545
+      internalID: 976566695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_64
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 345
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfb9355bc3123e64eb19d97d863fd719
+      internalID: -184421794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_65
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 345
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 772bf48f749a7c04e989c40318149136
+      internalID: 1313636955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_66
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 345
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05ec39e4b31fb1c4c8a1a3ea9d024b0f
+      internalID: 909127070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_67
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 345
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5cd7f759e2fd1643b5d23a7638ed02a
+      internalID: -242095578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_68
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 345
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8494b4caba7a3b43a4dccf697a98891
+      internalID: 884129862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_69
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 296
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d961f8300191d194ea77289e4fd7b537
+      internalID: -396105141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_70
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 295
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fdb410646cd7e54d9847f32b379beda
+      internalID: -591085836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_71
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 295
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87bbcffb8a3a55946bc23078d6d8248c
+      internalID: 1634398179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_72
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 248
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9613e8e3ffc16fe4e8f2bdae90d827b4
+      internalID: -1390303051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_73
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 247
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4099bbe4d2e2735478c823481d762364
+      internalID: 1163645579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_74
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 247
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eecebf78f8871940bb8b23ef7855d70
+      internalID: 435131159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_75
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 203
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88d2c7636a48d9f4282f5b089c3f8d22
+      internalID: -1793938643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_76
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 200
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7513d110f07a7324ca1c2e7c380761f2
+      internalID: -1150170533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_77
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 200
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e806f28a53ceb4ea1ca99098f54a19
+      internalID: -1789196583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_78
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 201
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39435bce01de16c4090dc8cdeee5c37f
+      internalID: 679092161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_79
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 201
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8354191166866b4ca7f1e0f053242dc
+      internalID: -1898778162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_80
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 153
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643764e192c38354794c2e28342d3ffe
+      internalID: -1017973185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_81
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 153
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3a3565952b9dc24fab1ca04e157dc94
+      internalID: 533541750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_82
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 153
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81222daae93ca5f4c95a1e1080174bf9
+      internalID: 1282469442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_83
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 153
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b7667999b33af4b8ac0478f1135396
+      internalID: -1779582411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_84
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 153
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1fef0669941a29469f7858cf82f0137
+      internalID: 402630282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_85
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 105
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94cb78ea80f6c564e857db4975585850
+      internalID: 47692284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_86
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 106
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feade8b52afc14149a4099594dd72c21
+      internalID: 142673408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_87
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 106
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 641d8779eeda4d34893f774b37967990
+      internalID: -1907658645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_88
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 107
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32fb0e0c1c3dde04dbb4b33e636500bf
+      internalID: -550149535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_89
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 107
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea3bf0214519313468a49bc04afeb861
+      internalID: -3017528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_90
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 57
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccdeff9f28c97244789523417e2cd116
+      internalID: -915563094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_91
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 57
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f32ee24d2b324014496d1ecb129dae2e
+      internalID: -1631751964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_92
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 57
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab1277723f41f444da8ffa1fad688df2
+      internalID: -113463302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_93
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 57
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e944d0133242dcd49b62d4f03ff830b5
+      internalID: -260207349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_94
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 9
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6925702bf9e00b542a49cbb1184af011
+      internalID: -427832990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_95
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 9
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b947bd9ed3cf9264ab4f9b5608821c05
+      internalID: -1449493824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_96
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 5
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9feb69c41e79ab34995a4aed67910641
+      internalID: -164471425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Down sprite sheet_97
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 6
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af8fcc62e553d546a49f9e1f72ac68d
+      internalID: 543874358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +2164,105 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Down sprite sheet_0: -1720221608
+      Down sprite sheet_1: 140780047
+      Down sprite sheet_10: -1913485594
+      Down sprite sheet_11: -886053020
+      Down sprite sheet_12: 471071041
+      Down sprite sheet_13: -293537531
+      Down sprite sheet_14: -295813041
+      Down sprite sheet_15: -1002068368
+      Down sprite sheet_16: -1103663708
+      Down sprite sheet_17: 970859039
+      Down sprite sheet_18: -1006332476
+      Down sprite sheet_19: 1590572682
+      Down sprite sheet_2: -1867332325
+      Down sprite sheet_20: -614867077
+      Down sprite sheet_21: -943574897
+      Down sprite sheet_22: -1122108727
+      Down sprite sheet_23: -219102002
+      Down sprite sheet_24: -2049825859
+      Down sprite sheet_25: 854627717
+      Down sprite sheet_26: 1987790580
+      Down sprite sheet_27: 617180133
+      Down sprite sheet_28: -1815981584
+      Down sprite sheet_29: -1005237274
+      Down sprite sheet_3: -1184921057
+      Down sprite sheet_30: -1367421355
+      Down sprite sheet_31: -896657249
+      Down sprite sheet_32: -1757279823
+      Down sprite sheet_33: 393816239
+      Down sprite sheet_34: -850402234
+      Down sprite sheet_35: -493940611
+      Down sprite sheet_36: -1610976427
+      Down sprite sheet_37: -415406432
+      Down sprite sheet_38: -245886993
+      Down sprite sheet_39: 1927941431
+      Down sprite sheet_4: -1028602186
+      Down sprite sheet_40: 580586532
+      Down sprite sheet_41: -1811411268
+      Down sprite sheet_42: 949595717
+      Down sprite sheet_43: 189230294
+      Down sprite sheet_44: -2130907505
+      Down sprite sheet_45: 870186395
+      Down sprite sheet_46: 903874140
+      Down sprite sheet_47: -1371564385
+      Down sprite sheet_48: -310362838
+      Down sprite sheet_49: -1659837162
+      Down sprite sheet_5: -1645006536
+      Down sprite sheet_50: 2064191271
+      Down sprite sheet_51: -1407436026
+      Down sprite sheet_52: -658700949
+      Down sprite sheet_53: -377098349
+      Down sprite sheet_54: -1812332532
+      Down sprite sheet_55: 1564912365
+      Down sprite sheet_56: 57120357
+      Down sprite sheet_57: 1628774658
+      Down sprite sheet_58: 707326798
+      Down sprite sheet_59: 1548049107
+      Down sprite sheet_6: -1737637719
+      Down sprite sheet_60: 1390184729
+      Down sprite sheet_61: -1267774714
+      Down sprite sheet_62: 775550593
+      Down sprite sheet_63: 976566695
+      Down sprite sheet_64: -184421794
+      Down sprite sheet_65: 1313636955
+      Down sprite sheet_66: 909127070
+      Down sprite sheet_67: -242095578
+      Down sprite sheet_68: 884129862
+      Down sprite sheet_69: -396105141
+      Down sprite sheet_7: 1174897674
+      Down sprite sheet_70: -591085836
+      Down sprite sheet_71: 1634398179
+      Down sprite sheet_72: -1390303051
+      Down sprite sheet_73: 1163645579
+      Down sprite sheet_74: 435131159
+      Down sprite sheet_75: -1793938643
+      Down sprite sheet_76: -1150170533
+      Down sprite sheet_77: -1789196583
+      Down sprite sheet_78: 679092161
+      Down sprite sheet_79: -1898778162
+      Down sprite sheet_8: 523060666
+      Down sprite sheet_80: -1017973185
+      Down sprite sheet_81: 533541750
+      Down sprite sheet_82: 1282469442
+      Down sprite sheet_83: -1779582411
+      Down sprite sheet_84: 402630282
+      Down sprite sheet_85: 47692284
+      Down sprite sheet_86: 142673408
+      Down sprite sheet_87: -1907658645
+      Down sprite sheet_88: -550149535
+      Down sprite sheet_89: -3017528
+      Down sprite sheet_9: 1820566312
+      Down sprite sheet_90: -915563094
+      Down sprite sheet_91: -1631751964
+      Down sprite sheet_92: -113463302
+      Down sprite sheet_93: -260207349
+      Down sprite sheet_94: -427832990
+      Down sprite sheet_95: -1449493824
+      Down sprite sheet_96: -164471425
+      Down sprite sheet_97: 543874358
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
