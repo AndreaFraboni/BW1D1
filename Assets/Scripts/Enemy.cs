@@ -60,10 +60,8 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    protected void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
-        if (_health <= 0) return;
-        
         _health -= damage;
         if (_health <= 0)
         {
@@ -102,6 +100,7 @@ public class Enemy : MonoBehaviour
     {
         Debug.Log(gameObject.name + "è morto");
         Destroy(gameObject);
+        DropLoot();
     }
 
     protected void DropLoot()
