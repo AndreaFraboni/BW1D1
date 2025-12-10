@@ -41,3 +41,30 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Ground
+    uniqueID: 3794416845
+    locked: 0
+  - name: Water
+    uniqueID: 3753978653
+    locked: 0
+  - name: GroundUp
+    uniqueID: 25653309
+    locked: 0
+  - name: TreeDown
+    uniqueID: 4238484821
+    locked: 0
+  - name: GroundUpBlock
+    uniqueID: 1124454601
+    locked: 0
+  - name: Tree
+    uniqueID: 1574857447
+    locked: 0
+  - name: ObjectsDown
+    uniqueID: 1745207029
+    locked: 0
+  - name: Objects
+    uniqueID: 4289995753
+    locked: 0
+  - name: ObjectsUp
+    uniqueID: 536714931
+    locked: 0
