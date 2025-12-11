@@ -1,13 +1,80 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1102 &-8462295052367497870
+--- !u!1107 &-9081756859887867827
+AnimatorStateMachine:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Base Layer
+  m_ChildStates:
+  - serializedVersion: 1
+    m_State: {fileID: 9080231202175396644}
+    m_Position: {x: 310, y: 127.5, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 4858417748848353705}
+    m_Position: {x: 320, y: 137.5, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 6679805392215875089}
+    m_Position: {x: 330, y: 147.5, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -7642911997500449960}
+    m_Position: {x: 340, y: 157.5, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -3391734578933830572}
+    m_Position: {x: 611, y: 143.25, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 5661133307344393987}
+    m_Position: {x: 621, y: 153.25, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 8343739540742986935}
+    m_Position: {x: 631, y: 163.25, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -6072497989269220338}
+    m_Position: {x: 641, y: 173.25, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -7967032257652033410}
+    m_Position: {x: 787, y: 72.125, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 8260850138304496832}
+    m_Position: {x: 797, y: 82.125, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -8772181596266634913}
+    m_Position: {x: 807, y: 92.125, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 2611431356156168630}
+    m_Position: {x: 817, y: 102.125, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 375855866256730097}
+    m_Position: {x: 636, y: 22.125, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 2509243007162908404}
+    m_Position: {x: 646, y: 32.125, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -8256056498406139891}
+    m_Position: {x: 656, y: 42.125, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -3644986216885272369}
+    m_Position: {x: 666, y: 52.125, z: 0}
+  m_ChildStateMachines: []
+  m_AnyStateTransitions: []
+  m_EntryTransitions: []
+  m_StateMachineTransitions: {}
+  m_StateMachineBehaviours: []
+  m_AnyStatePosition: {x: 50, y: 20, z: 0}
+  m_EntryPosition: {x: 50, y: 120, z: 0}
+  m_ExitPosition: {x: 1120, y: 80, z: 0}
+  m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
+  m_DefaultState: {fileID: 9080231202175396644}
+--- !u!1102 &-8772181596266634913
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: vampire2_walkleft
+  m_Name: vampire3_deathright
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -20,20 +87,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: f4295ce4c33e6794f826a9e8464617d6, type: 2}
+  m_Motion: {fileID: 7400000, guid: 1711e30911ca7e64c81564da04c9e8d6, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &-4856881535468511904
+--- !u!1102 &-8256056498406139891
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: vampire2_walkup
+  m_Name: vampire3_attackright
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -46,20 +113,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: e2a12348185028f46b2b91df7e91b672, type: 2}
+  m_Motion: {fileID: 7400000, guid: 6b7f901c51b030a4789fb8cab9527e1b, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &-4498157396422536051
+--- !u!1102 &-7967032257652033410
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: vampire2_idleleft
+  m_Name: vampire3_deathdown
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -72,20 +139,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: ab34cac9ea8b5f44ebf66a848cd1f563, type: 2}
+  m_Motion: {fileID: 7400000, guid: c1c03d45eb17f8b4a87a3d4236802f00, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &-4440785928910511551
+--- !u!1102 &-7642911997500449960
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: vampire2_walkdown
+  m_Name: vampire3_idleup
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -98,20 +165,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 5934778d74afaf344a20136b921c4f44, type: 2}
+  m_Motion: {fileID: 7400000, guid: 7be5192b9f6783f48a9c8b6c7d5a6601, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &-4339611076220354422
+--- !u!1102 &-6072497989269220338
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: vampire2_deathleft
+  m_Name: vampire3_walkup
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -124,20 +191,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 06bdc0371ed72754d927565b53ffac23, type: 2}
+  m_Motion: {fileID: 7400000, guid: fb7874d6ad5c45949aaa7f3406983619, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &-2287048271997897548
+--- !u!1102 &-3644986216885272369
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: vampire2_attackright
+  m_Name: vampire3_attackup
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -150,20 +217,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 6d82b9723624f8c48b40e5fe4d411d08, type: 2}
+  m_Motion: {fileID: 7400000, guid: 11532b9e6b1366849beb792cf92d881b, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &-79873540481470035
+--- !u!1102 &-3391734578933830572
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: vampire2_idledown
+  m_Name: vampire3_walkdown
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -176,7 +243,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 2da8d6efd53ae804a9bfbf5e8e11ea1a, type: 2}
+  m_Motion: {fileID: 7400000, guid: 6012c79dd90aca4448588fc8b2079d0a, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -188,13 +255,13 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Vampires2
+  m_Name: Vampire3
   serializedVersion: 5
   m_AnimatorParameters: []
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
-    m_StateMachine: {fileID: 2935852412232659866}
+    m_StateMachine: {fileID: -9081756859887867827}
     m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
@@ -204,14 +271,14 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
---- !u!1102 &1764543582393106431
+--- !u!1102 &375855866256730097
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: vampire2_idleright
+  m_Name: vampire3_attackdown
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -224,20 +291,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 6268227ce647ded438789f7cfdb2fac2, type: 2}
+  m_Motion: {fileID: 7400000, guid: dbb5403d041b8f040825d9b5c0166a81, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &2355277784274996778
+--- !u!1102 &2509243007162908404
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: vampire2_deathup
+  m_Name: vampire3_attackleft
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -250,87 +317,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 972a9eff10168b64bb12566bd8b2466e, type: 2}
+  m_Motion: {fileID: 7400000, guid: 676a7259e68bcba4bb2a8952c9363d22, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1107 &2935852412232659866
-AnimatorStateMachine:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Base Layer
-  m_ChildStates:
-  - serializedVersion: 1
-    m_State: {fileID: -79873540481470035}
-    m_Position: {x: 260, y: 140, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: -4498157396422536051}
-    m_Position: {x: 260, y: 180, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 1764543582393106431}
-    m_Position: {x: 270, y: 190, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 8425418883179044137}
-    m_Position: {x: 280, y: 200, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: -4440785928910511551}
-    m_Position: {x: 500, y: 140, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: -8462295052367497870}
-    m_Position: {x: 510, y: 150, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 4537383956385944895}
-    m_Position: {x: 520, y: 160, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: -4856881535468511904}
-    m_Position: {x: 530, y: 170, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 7278177982751748412}
-    m_Position: {x: 891, y: 137.5, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: -4339611076220354422}
-    m_Position: {x: 901, y: 147.5, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 5956875495700264421}
-    m_Position: {x: 911, y: 157.5, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 2355277784274996778}
-    m_Position: {x: 921, y: 167.5, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 7830804668717548648}
-    m_Position: {x: 762, y: 81.5, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 6254358289206582660}
-    m_Position: {x: 772, y: 91.5, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: -2287048271997897548}
-    m_Position: {x: 782, y: 101.5, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: 7904113679402089315}
-    m_Position: {x: 792, y: 111.5, z: 0}
-  m_ChildStateMachines: []
-  m_AnyStateTransitions: []
-  m_EntryTransitions: []
-  m_StateMachineTransitions: {}
-  m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 50, y: 20, z: 0}
-  m_EntryPosition: {x: 50, y: 120, z: 0}
-  m_ExitPosition: {x: 1140, y: 120, z: 0}
-  m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: -79873540481470035}
---- !u!1102 &4537383956385944895
+--- !u!1102 &2611431356156168630
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: vampire2_walkright
+  m_Name: vampire3_deathup
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -343,20 +343,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: eedd6487d6bab1640b68f59d9acf83c8, type: 2}
+  m_Motion: {fileID: 7400000, guid: 56777b7d8f376e24b8330cf339ec9d8e, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &5956875495700264421
+--- !u!1102 &4858417748848353705
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: vampire2_deathright
+  m_Name: vampire3_idleleft
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -369,20 +369,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: e05a991d2f2dfd4498b49340fe2cc809, type: 2}
+  m_Motion: {fileID: 7400000, guid: 609d4180332fcbe4e84efa960d0435de, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &6254358289206582660
+--- !u!1102 &5661133307344393987
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: vampire2_attackleft
+  m_Name: vampire3_walkleft
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -395,20 +395,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: efa4b1858c9d77846a29cae4b87bbc84, type: 2}
+  m_Motion: {fileID: 7400000, guid: e5557b2e5dead2340a4a7e2d20e84f08, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &7278177982751748412
+--- !u!1102 &6679805392215875089
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: vampire2_deathdown
+  m_Name: vampire3_idleright
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -421,20 +421,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 7ffc9758729e37648b9c83e3247f5cc0, type: 2}
+  m_Motion: {fileID: 7400000, guid: 0a5f49560328ae14583df1636b73dc16, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &7830804668717548648
+--- !u!1102 &8260850138304496832
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: vampire2_attackdown
+  m_Name: vampire3_deathleft
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -447,20 +447,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 863e0c95f9ce8734b94c320eb691ecdb, type: 2}
+  m_Motion: {fileID: 7400000, guid: bef2243790486244cbd3e42fdb14bbbb, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &7904113679402089315
+--- !u!1102 &8343739540742986935
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: vampire2_attackup
+  m_Name: vampire3_walkright
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -473,20 +473,20 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 35914a662e1f1b5498810a8a8d365ed6, type: 2}
+  m_Motion: {fileID: 7400000, guid: bb5140d432c7cef49a8c11c0db6e6ece, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &8425418883179044137
+--- !u!1102 &9080231202175396644
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: vampire2_idleup
+  m_Name: vampire3_idledown
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -499,7 +499,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 0c28a74d557dfd14d9c42890cc47496c, type: 2}
+  m_Motion: {fileID: 7400000, guid: 5222ec8908c4c0b47866d32d92d6c276, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
