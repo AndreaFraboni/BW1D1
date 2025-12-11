@@ -41,3 +41,51 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Ground
+    uniqueID: 3794416845
+    locked: 0
+  - name: Water
+    uniqueID: 3753978653
+    locked: 0
+  - name: GroundUp
+    uniqueID: 25653309
+    locked: 0
+  - name: Characters
+    uniqueID: 901074839
+    locked: 0
+  - name: GroundUpBlock
+    uniqueID: 1124454601
+    locked: 0
+  - name: PassableObject
+    uniqueID: 2526285019
+    locked: 0
+  - name: TreeDown2
+    uniqueID: 1734597595
+    locked: 0
+  - name: TreeDown1
+    uniqueID: 4238484821
+    locked: 0
+  - name: Tree
+    uniqueID: 1574857447
+    locked: 0
+  - name: ObjectsDown
+    uniqueID: 1745207029
+    locked: 0
+  - name: Objects
+    uniqueID: 4289995753
+    locked: 0
+  - name: ObjectsUp
+    uniqueID: 536714931
+    locked: 0
+  - name: Foliage2
+    uniqueID: 2499380163
+    locked: 0
+  - name: Foliage1
+    uniqueID: 1247851991
+    locked: 0
+  - name: Foliage
+    uniqueID: 1945940465
+    locked: 0
+  - name: Overlay
+    uniqueID: 2687415029
+    locked: 0
