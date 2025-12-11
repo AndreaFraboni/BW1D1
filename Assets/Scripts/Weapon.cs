@@ -5,25 +5,13 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    [SerializeField] private int _damage = 1;
+    [SerializeField] private int _damage = 1; //bullet?
     [SerializeField] private float _fireRate = 3f;
+    [SerializeField] protected float _projectileSpeed = 4f; //bullet?
     [SerializeField] protected GameObject _projectilePrefab;
     protected float _lastShoot = 0f;
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (IfShoot())
-        {
-            Shoot();
-        }
-    }
-
+    
     protected bool IfShoot()
     {
         float shootTime = _lastShoot + _fireRate;
@@ -35,9 +23,17 @@ public class Weapon : MonoBehaviour
         {
             return false;
         }
+       
     }
     protected virtual void Shoot()
     {
 
+    }
+    public virtual void Update()
+    {
+        if (IfShoot())
+        {
+            Shoot();
+        }
     }
 }
