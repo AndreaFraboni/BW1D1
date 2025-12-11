@@ -42,13 +42,15 @@ public class Player : MonoBehaviour
 
         _movedir = new Vector2(h, v);
 
-        //isWalking = _movedir != Vector2.zero;
+        isWalking = _movedir != Vector2.zero;
 
-        //if (isWalking)
-        //{
-        //    _animParam.SetVerticalSpeedParam(v);
-        //    _animParam.SetHorizontalSpeedParam(h);
-        //}
+        _animParam.SetBoolParam("isWalking", isWalking);
+
+        if (isWalking)
+        {
+            _animParam.SetVerticalSpeedParam(v);
+            _animParam.SetHorizontalSpeedParam(h);
+        }
     }
 
     void FixedUpdate()
