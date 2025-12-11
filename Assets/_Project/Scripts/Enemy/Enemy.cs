@@ -13,7 +13,11 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected float _dropChance = 0.15f;
     [SerializeField] protected GameObject _lootWeapon;
     [SerializeField] protected Transform _playerTarget;
+
+    private AnimationParamHandler _animParam;
+    private CircleCollider2D _Collider2D;
     protected Rigidbody2D _rb;
+    
     protected EnemyState _currentState = EnemyState.MOVE;
     protected int _health;
     // Start is called before the first frame update
@@ -21,6 +25,8 @@ public class Enemy : MonoBehaviour
     protected virtual void Awake()
     {
         _rb = GetComponent<Rigidbody2D>(); // Qua prendo il riferimento al RigidBody
+        _Collider2D = GetComponent<CircleCollider2D>();
+        _animParam = GetComponent<AnimationParamHandler>();
     }
     protected virtual void Start()
     {
@@ -99,15 +105,35 @@ public class Enemy : MonoBehaviour
     protected virtual void Die()
     {
         Debug.Log(gameObject.name + "è morto");
-        Destroy(gameObject);
-        DropLoot();
+
+
+        if (_Collider2D != null) _Collider2D.enabled = false;
+        if (_rb != null) _rb.simulated = false;
+
+        _animParam.SetBoolParam("isDying", true);
+        //Destroy(gameObject);
     }
 
     protected void DropLoot()
     {
-        if (Random.value <= _dropChance)
+        int randomnumber = Random.Range(0, 100);
+
+        if (randomnumber > 0 && randomnumber < 10)
         {
-            Instantiate (_lootWeapon , transform.position, Quaternion.identity) ;
+            // TO DO : aggiungere drop arMA !
+
+
+            //if (Random.value <= _dropChance)
+            //{
+            //    Instantiate(_lootWeapon, transform.position, Quaternion.identity);
+            //}
+
+        } 
+        else
+        {
+            // TO DO : aggiungere drop energia
+
+
         }
     }
 
@@ -116,4 +142,19 @@ public class Enemy : MonoBehaviour
         Vector2 direction = (destination - (Vector2)transform.position).normalized;
         _rb.velocity = direction * _moveSpeed;
     }
+
+    private void OnDisable()
+    {
+        //if (_enemiesManager != null)
+        //{
+        //    _enemiesManager.RemoveEnemy(this);
+        //}
+        DropLoot();
+    }
+
+    public void DestroyGOenemy()
+    {
+        Destroy(gameObject);
+    }
+
 }

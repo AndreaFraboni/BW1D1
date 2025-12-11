@@ -7,9 +7,22 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private float _speed = 2f;
 
+    private AnimationParamHandler _animParam;
+    private CircleCollider2D _Collider2D;
+
     private Rigidbody2D _rb;
 
     public float h, v;
+    private Vector2 _movedir;
+
+    private bool isWalking = false;
+
+    private void Awake()
+    {
+        _animParam = GetComponent<AnimationParamHandler>();
+        _Collider2D = GetComponent<CircleCollider2D>();
+        _rb = GetComponent<Rigidbody2D>();
+    }
 
     public void GetItem(string itemName, int value)
     {
@@ -26,19 +39,34 @@ public class Player : MonoBehaviour
     {
         h = Input.GetAxis("Horizontal");
         v = Input.GetAxis("Vertical");
+
+        _movedir = new Vector2(h, v);
+
+        isWalking = _movedir != Vector2.zero;
+
+        if (isWalking)
+        {
+            _animParam.SetVerticalSpeedParam(v);
+            _animParam.SetHorizontalSpeedParam(h);
+        }
     }
 
     void FixedUpdate()
     {
-        Vector2 dir = new Vector2(h, v);
-
-        float sqrLenght = dir.sqrMagnitude;
+        float sqrLenght = _movedir.sqrMagnitude;
 
         if (sqrLenght > 1)
         {
-            dir = dir / Mathf.Sqrt(sqrLenght);
+            _movedir = _movedir / Mathf.Sqrt(sqrLenght);
         }
 
-        _rb.MovePosition(_rb.position + dir * (_speed * Time.deltaTime));
+        _rb.MovePosition(_rb.position + _movedir * (_speed * Time.deltaTime));
     }
+
+    public void DestroyGOplayer()
+    {
+        Destroy(gameObject);
+    }
+
+
 }
