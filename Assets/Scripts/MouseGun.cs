@@ -10,6 +10,7 @@ public class MouseGun : Weapon
     {
         _lastShoot = Time.time;
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mousePosition.z = 0;
         Vector3 spawnPosition = _firePoint.position;
         Vector2 fireDirection = (mousePosition  - spawnPosition).normalized;
         GameObject projectile = Instantiate (_projectilePrefab, spawnPosition, Quaternion.identity);
