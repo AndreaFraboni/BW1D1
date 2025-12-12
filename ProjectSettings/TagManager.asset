@@ -50,9 +50,6 @@ TagManager:
   - name: GroundUp
     uniqueID: 25653309
     locked: 0
-  - name: Characters
-    uniqueID: 901074839
-    locked: 0
   - name: GroundUpBlock
     uniqueID: 1124454601
     locked: 0
@@ -76,6 +73,9 @@ TagManager:
     locked: 0
   - name: ObjectsUp
     uniqueID: 536714931
+    locked: 0
+  - name: Characters
+    uniqueID: 901074839
     locked: 0
   - name: Foliage2
     uniqueID: 2499380163
