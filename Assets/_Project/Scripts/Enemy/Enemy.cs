@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Windows;
 
 
 public class Enemy : MonoBehaviour
@@ -14,14 +15,17 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected GameObject _lootWeapon;
     [SerializeField] protected Transform _playerTarget;
 
-    private AnimationParamHandler _animParam;
+    protected AnimationParamHandler _animParam;
     private CircleCollider2D _Collider2D;
     protected Rigidbody2D _rb;
     
     protected EnemyState _currentState = EnemyState.MOVE;
     protected int _health;
     // Start is called before the first frame update
-    
+
+    public bool isWalking = false;
+    public bool isAlive = true;
+
     protected virtual void Awake()
     {
         _rb = GetComponent<Rigidbody2D>(); // Qua prendo il riferimento al RigidBody
@@ -55,12 +59,24 @@ public class Enemy : MonoBehaviour
         {
             case EnemyState.PURSUIT:
                 Vector2 direction = (_playerTarget.position - transform.position).normalized;
+
+                isWalking = direction != Vector2.zero;
+
+                _animParam.SetBoolParam("isWalking", isWalking);
+               
+                if (isWalking)
+                {
+                    _animParam.SetDirectionalSpeedParams(direction);
+                }
+
                 _rb.velocity = direction * _moveSpeed;
                 break;
             case EnemyState.MOVE:
+
                 PatrolBehavior();
                 break;
             case EnemyState.IDLE:
+
                 _rb.velocity = Vector2.zero;
                 break;
         }
