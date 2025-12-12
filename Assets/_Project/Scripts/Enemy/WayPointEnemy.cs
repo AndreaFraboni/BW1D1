@@ -23,7 +23,9 @@ public class WayPointEnemy : Enemy
             _rb.velocity = Vector2.zero;
             return;
         }
+
         MoveWayPoint(_currentDestination);
+        
         float distancePoint = Vector2.Distance(transform.position, _currentDestination);
         if (distancePoint < _stopDistance)
         {

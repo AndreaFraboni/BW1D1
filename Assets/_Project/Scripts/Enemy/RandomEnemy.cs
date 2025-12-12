@@ -15,7 +15,9 @@ public class RandomEnemy : Enemy
     }
     protected override void PatrolBehavior()
     {
+        
         MoveWayPoint(_randomDestination);
+
         _randomTimer = Time.deltaTime;
         float distance = Vector2.Distance(transform.position, _randomDestination);
 

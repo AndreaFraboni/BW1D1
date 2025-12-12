@@ -156,6 +156,16 @@ public class Enemy : MonoBehaviour
     protected void MoveWayPoint(Vector2 destination)
     {
         Vector2 direction = (destination - (Vector2)transform.position).normalized;
+
+        isWalking = direction != Vector2.zero;
+
+        _animParam.SetBoolParam("isWalking", isWalking);
+
+        if (isWalking)
+        {
+            _animParam.SetDirectionalSpeedParams(direction);
+        }
+
         _rb.velocity = direction * _moveSpeed;
     }
 

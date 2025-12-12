@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LifeHandler : MonoBehaviour
 {
-    private string name;
+    //private string name;
     public int _hp;
     private int _maxHp = 100;
 
