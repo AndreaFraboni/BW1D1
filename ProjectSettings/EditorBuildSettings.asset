@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Project/Scenes/Livello1.unity
+    path: Assets/_Project/Scenes/NOT_USED/Livello1.unity
     guid: 7860d4a020772a143af92cfa229ae540
   m_configObjects: {}
