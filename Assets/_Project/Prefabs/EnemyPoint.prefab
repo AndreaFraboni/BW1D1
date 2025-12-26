@@ -42,6 +42,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2614943939645336517}
   - component: {fileID: 990103162778835855}
+  - component: {fileID: 5678451257215784435}
   - component: {fileID: 6484704966356223222}
   - component: {fileID: 6444439224334788565}
   m_Layer: 0
@@ -86,12 +87,25 @@ MonoBehaviour:
   _dropChance: 0.15
   _lootWeapon: {fileID: 0}
   _playerTarget: {fileID: 0}
-  _animParam: {fileID: 0}
   isWalking: 0
   isAlive: 1
   _wayPoints:
   - {fileID: 0}
   - {fileID: 0}
+--- !u!114 &5678451257215784435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5357661082318860187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e256c598701f37d4a8f69fe4ef694b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _verticalSpeedParamName: vSpeed
+  _horizontalSpeedParamName: hSpeed
 --- !u!61 &6484704966356223222
 BoxCollider2D:
   m_ObjectHideFlags: 0
