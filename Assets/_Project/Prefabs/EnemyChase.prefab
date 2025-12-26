@@ -44,7 +44,6 @@ GameObject:
   - component: {fileID: 6412521869717421545}
   - component: {fileID: 8631944564652477218}
   - component: {fileID: 5685572556548561757}
-  - component: {fileID: 4628575270606484241}
   - component: {fileID: 2304424592177460228}
   m_Layer: 0
   m_Name: EnemyChase
@@ -88,10 +87,8 @@ MonoBehaviour:
   _dropChance: 0.15
   _lootWeapon: {fileID: 0}
   _playerTarget: {fileID: 0}
-  _animParam: {fileID: 0}
   isWalking: 0
   isAlive: 1
-  _anim: {fileID: 0}
 --- !u!61 &8631944564652477218
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -164,27 +161,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!95 &4628575270606484241
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7496345038551302453}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bd1cdc4129ca4d847aa2e9b2f3dbfd11, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &2304424592177460228
 MonoBehaviour:
   m_ObjectHideFlags: 0

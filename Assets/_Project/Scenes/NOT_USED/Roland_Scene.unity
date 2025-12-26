@@ -782,10 +782,6 @@ PrefabInstance:
       propertyPath: _lootWeapon
       value: 
       objectReference: {fileID: 527839184}
-    - target: {fileID: 6412521869717421545, guid: 67d5f8438d68bdb448c643ea68db8cc1, type: 3}
-      propertyPath: _playerTarget
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 7190358013770707577, guid: 67d5f8438d68bdb448c643ea68db8cc1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.9
@@ -829,10 +825,6 @@ PrefabInstance:
     - target: {fileID: 7496345038551302453, guid: 67d5f8438d68bdb448c643ea68db8cc1, type: 3}
       propertyPath: m_Name
       value: EnemyChase
-      objectReference: {fileID: 0}
-    - target: {fileID: 7496345038551302453, guid: 67d5f8438d68bdb448c643ea68db8cc1, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

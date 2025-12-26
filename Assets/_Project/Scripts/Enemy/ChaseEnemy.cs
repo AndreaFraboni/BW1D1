@@ -11,23 +11,11 @@ public class ChaseEnemy : Enemy
         _currentState = EnemyState.PURSUIT;
     }
 
-    protected override void PatrolBehavior()
+    protected override void Update()
     {
+        // niente CheckPlayer: inseguo sempre
         _currentState = EnemyState.PURSUIT;
-
-        Vector2 direction = (_playerTarget.position - transform.position).normalized;
-
-
-        isWalking = direction != Vector2.zero;
-
-        _animParam.SetBoolParam("isWalking", isWalking);
-
-        if (isWalking)
-        {
-            _animParam.SetDirectionalSpeedParams(direction);
-        }
-
-        _rb.velocity = direction * _moveSpeed;
     }
-    
+    protected override void PatrolBehavior() { } // non usato
+
 }
