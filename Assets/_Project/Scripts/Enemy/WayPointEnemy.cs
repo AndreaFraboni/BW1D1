@@ -37,8 +37,5 @@ public class WayPointEnemy : Enemy
             _currentDestination = _wayPoints[_currentWayPoint].position;
         }
     }
-
-   
-
     
 }

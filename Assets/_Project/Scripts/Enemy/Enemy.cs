@@ -106,9 +106,7 @@ public class Enemy : MonoBehaviour
     protected virtual void PatrolBehavior()
     {
         _rb.velocity = Vector2.zero;
-    }
-
-        
+    }        
   
     protected virtual void OnTriggerEnter2D(Collider2D other)
     {
@@ -127,7 +125,6 @@ public class Enemy : MonoBehaviour
         if (_rb != null) _rb.simulated = false;
 
         _animParam.SetBoolParam("isDying", true);
-        //Destroy(gameObject);
     }
 
     protected void DropLoot()
