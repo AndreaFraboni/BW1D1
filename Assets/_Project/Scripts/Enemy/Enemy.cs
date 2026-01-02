@@ -3,10 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Windows;
 
-
 public class Enemy : MonoBehaviour
 {
-    public enum EnemyState {IDLE , MOVE , PURSUIT}
+    public enum EnemyState 
+    {
+        IDLE, 
+        MOVE, 
+        PURSUIT
+    }
+    
     [SerializeField] private float _rangeEnemy = 7f;
     [SerializeField] protected float _moveSpeed = 2f;
     [SerializeField] protected float _stopDistance = 0.1f;
@@ -120,7 +125,6 @@ public class Enemy : MonoBehaviour
     {
         Debug.Log(gameObject.name + "è morto");
 
-
         if (_Collider2D != null) _Collider2D.enabled = false;
         if (_rb != null) _rb.simulated = false;
 
@@ -134,19 +138,14 @@ public class Enemy : MonoBehaviour
         if (randomnumber > 0 && randomnumber < 10)
         {
             // TO DO : aggiungere drop arMA !
-
-
             //if (Random.value <= _dropChance)
             //{
             //    Instantiate(_lootWeapon, transform.position, Quaternion.identity);
             //}
-
         } 
         else
         {
             // TO DO : aggiungere drop energia
-
-
         }
     }
 
