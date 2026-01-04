@@ -89,6 +89,7 @@ MonoBehaviour:
   _playerTarget: {fileID: 0}
   isWalking: 0
   isAlive: 1
+  direction: {x: 0, y: 0}
   _wayPoints:
   - {fileID: 0}
   - {fileID: 0}

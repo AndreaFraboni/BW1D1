@@ -33,6 +33,8 @@ public class Enemy : MonoBehaviour
     public bool isWalking = false;
     public bool isAlive = true;
 
+    public Vector2 direction;
+
     protected virtual void Awake()
     {
         if (_rb == null) _rb = GetComponent<Rigidbody2D>();
@@ -106,14 +108,13 @@ public class Enemy : MonoBehaviour
 
     protected void MoveWayPoint(Vector2 destination)
     {
-        Vector2 direction = (destination - (Vector2)transform.position).normalized;
-        isWalking = direction != Vector2.zero;
+        direction = (destination - (Vector2)transform.position).normalized;        
+        isWalking = direction != Vector2.zero;        
         _animParam.SetBoolParam("isWalking", isWalking);
         if (isWalking)
         {
             _animParam.SetDirectionalSpeedParams(direction);
         }
-
         _rb.velocity = direction * _moveSpeed;
     }
 
@@ -125,17 +126,13 @@ public class Enemy : MonoBehaviour
         {
             case EnemyState.PURSUIT:
 
-                Vector2 direction = (_playerTarget.position - transform.position).normalized;
-
+                direction = (_playerTarget.position - transform.position).normalized;
                 isWalking = direction != Vector2.zero;
-
                 _animParam.SetBoolParam("isWalking", isWalking);
-
                 if (isWalking)
                 {
                     _animParam.SetDirectionalSpeedParams(direction);
                 }
-
                 _rb.velocity = direction * _moveSpeed;
 
                 break;

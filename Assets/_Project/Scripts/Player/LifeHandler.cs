@@ -9,14 +9,14 @@ public class LifeHandler : MonoBehaviour
     private int _maxHp = 100;
 
     private AnimationParamHandler _animParam;
-    private CircleCollider2D _Collider2D;
+    private CircleCollider2D _collider2D;
     private Rigidbody2D _rb;
 
     private void Awake()
     {
-        _Collider2D = GetComponent<CircleCollider2D>();
-        _rb = GetComponent<Rigidbody2D>();
-        _animParam = GetComponent<AnimationParamHandler>();
+        if (_rb==null) _rb = GetComponent<Rigidbody2D>();
+        if (_collider2D==null) _collider2D = GetComponent<CircleCollider2D>();
+        if (_animParam==null) _animParam = GetComponent<AnimationParamHandler>();
     }
 
     private string GetName() => name;
@@ -55,7 +55,7 @@ public class LifeHandler : MonoBehaviour
     {
         //isAlive = false;
 
-        if (_Collider2D != null) _Collider2D.enabled = false;
+        if (_collider2D != null) _collider2D.enabled = false;
         if (_rb != null) _rb.simulated = false;
 
         _animParam.SetBoolParam("isDying", true);

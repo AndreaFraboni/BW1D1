@@ -18515,10 +18515,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyPoint
       objectReference: {fileID: 0}
-    - target: {fileID: 5357661082318860187, guid: 1b45a19f2c83aad4d8e5156752a731e5, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -62712,10 +62708,6 @@ PrefabInstance:
     - target: {fileID: 3377114641314714041, guid: 83f379323ecca0b428748a5f8ca4aa4b, type: 3}
       propertyPath: m_Name
       value: EnemyRandom
-      objectReference: {fileID: 0}
-    - target: {fileID: 3377114641314714041, guid: 83f379323ecca0b428748a5f8ca4aa4b, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3443246145125173990, guid: 83f379323ecca0b428748a5f8ca4aa4b, type: 3}
       propertyPath: m_LocalPosition.x
