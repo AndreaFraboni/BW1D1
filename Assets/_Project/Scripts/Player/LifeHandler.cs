@@ -9,17 +9,11 @@ public class LifeHandler : MonoBehaviour
     [SerializeField] private int _maxHp = 100;
     [SerializeField] private int _lives = 3;
 
-    private Rigidbody2D _rb;
-
     private Enemy _enemyController;
     private Player _playerController;
 
     private void Awake()
     {
-        if (_rb == null) _rb = GetComponent<Rigidbody2D>();
-        if (_collider2D == null) _collider2D = GetComponent<CircleCollider2D>();
-        if (_animParam == null) _animParam = GetComponent<AnimationParamHandler>();
-
         if (TryGetComponent<Player>(out _playerController))
         {
             return;
