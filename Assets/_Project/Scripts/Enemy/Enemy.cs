@@ -201,6 +201,16 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    public void EnemyDeath()
+    {
+        isAlive = false;
+
+        if (_Collider2D != null) _Collider2D.enabled = false;
+        if (_rb != null) _rb.simulated = false;
+
+        //_enemyAnimation.SetBoolParam("isDying", true);
+    }
+
     public void DestroyGOenemy()
     {
         Destroy(gameObject);

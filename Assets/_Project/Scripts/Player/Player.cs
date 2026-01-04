@@ -8,13 +8,12 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private float _speed = 2f;
 
-    private AnimationParamHandler _animParam;
-    private CircleCollider2D _collider2D;
-
-    private Rigidbody2D _rb;
-
     public float h, v;
     private Vector2 _movedir;
+
+    private Rigidbody2D _rb;
+    private CircleCollider2D _collider2D;
+    private AnimationParamHandler _animParam;
 
     private bool isWalking = false;
     public bool isAlive = true;
@@ -66,6 +65,16 @@ public class Player : MonoBehaviour
         LifeHandler _lifeHandler = GetComponentInParent<LifeHandler>();
         _lifeHandler.AddHp(value);
         Debug.Log($"{_lifeHandler.GetHp()}");
+    }
+
+    public void PlayerDeath()
+    {
+        isAlive = false;
+
+        if (_collider2D != null) _collider2D.enabled = false;
+        if (_rb != null) _rb.simulated = false;
+
+        //_PlayerAnimation.SetBoolParam("isDying", true);
     }
 
     public void DestroyGOplayer()
