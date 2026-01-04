@@ -19,6 +19,6 @@ public class DoubleGun : Weapon
 
         GameObject projectile = Instantiate (_projectilePrefab,spawnPosition,Quaternion.identity);
         Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
-        rb.velocity = direction * _projectileSpeed;
+       // rb.velocity = direction * _projectileSpeed;
     }
 }

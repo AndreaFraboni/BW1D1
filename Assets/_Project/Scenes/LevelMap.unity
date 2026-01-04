@@ -18515,6 +18515,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyPoint
       objectReference: {fileID: 0}
+    - target: {fileID: 5357661082318860187, guid: 1b45a19f2c83aad4d8e5156752a731e5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -36776,6 +36780,51 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1317619056
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1317619058}
+  - component: {fileID: 1317619057}
+  m_Layer: 0
+  m_Name: EnemiesManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1317619057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317619056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1816a0ff8a43e9b4b95975bbd5e87521, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listEnemies: []
+--- !u!4 &1317619058
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317619056}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.37428, y: 12.031836, z: -0.42623436}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1466321970
 GameObject:
   m_ObjectHideFlags: 0
@@ -62664,6 +62713,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyRandom
       objectReference: {fileID: 0}
+    - target: {fileID: 3377114641314714041, guid: 83f379323ecca0b428748a5f8ca4aa4b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3443246145125173990, guid: 83f379323ecca0b428748a5f8ca4aa4b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.42
@@ -62778,3 +62831,4 @@ SceneRoots:
   - {fileID: 128661752}
   - {fileID: 8713716214417146098}
   - {fileID: 1108749174}
+  - {fileID: 1317619058}

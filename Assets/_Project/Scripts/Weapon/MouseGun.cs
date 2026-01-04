@@ -15,7 +15,7 @@ public class MouseGun : Weapon
         Vector2 fireDirection = (mousePosition  - spawnPosition).normalized;
         GameObject projectile = Instantiate (_projectilePrefab, spawnPosition, Quaternion.identity);
         Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
-        rb.velocity = fireDirection * _projectileSpeed;
+        //rb.velocity = fireDirection * _projectileSpeed;
 
     }
 }

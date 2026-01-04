@@ -11,7 +11,7 @@ public class DownGun : Weapon
         Vector2 fireDirection = Vector2.down;
         GameObject projectile = Instantiate(_projectilePrefab, spanwPosition, Quaternion.identity);
         Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
-        rb.velocity = fireDirection * _projectileSpeed;
+       // rb.velocity = fireDirection * _projectileSpeed;
 
 
     }

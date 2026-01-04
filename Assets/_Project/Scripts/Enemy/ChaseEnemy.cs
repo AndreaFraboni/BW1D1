@@ -8,6 +8,7 @@ public class ChaseEnemy : Enemy
     protected override void Start()
     {
         base.Start();
+
         _currentState = EnemyState.PURSUIT;
     }
 
@@ -16,6 +17,7 @@ public class ChaseEnemy : Enemy
         // niente CheckPlayer: inseguo sempre
         _currentState = EnemyState.PURSUIT;
     }
-    protected override void PatrolBehavior() { } // non usato
+
+    protected override void PatrolBehavior() {} // NON viene usato per muoversi ma usiamo FixedUpdate nella classe madre avendo EnemyState.PURSUIT
 
 }

@@ -31,7 +31,6 @@ public class RandomEnemy : Enemy
     {
         float randomX = Random.Range (-_moveRange, _moveRange);
         float randomY = Random.Range(-_moveRange, _moveRange);
-
         Vector2 randomOffset = new Vector2(randomX, randomY);
         _randomDestination = (Vector2)transform.position + randomOffset;
         _randomTimer = _moveTime;
