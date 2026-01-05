@@ -13,7 +13,19 @@ public class Weapon : MonoBehaviour
     protected EnemiesManager _enemiesRegister;
 
     protected float _lastShoot = 0f;
-    
+
+    protected virtual void Awake()
+    {
+        if (_enemiesRegister == null)
+        {
+            _enemiesRegister = FindObjectOfType<EnemiesManager>();
+            if (_enemiesRegister == null)
+            {
+                Debug.LogError("EnemiesManager NON sta in scena !!!");
+            }
+        }
+    }
+
     protected bool IfShoot()
     {
         float shootTime = _lastShoot + _fireRate;
