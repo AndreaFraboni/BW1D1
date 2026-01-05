@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Gun : Weapon
 {
-    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private GameObject _projectilePrefab;
 
     protected override void Shoot()
     {
@@ -17,9 +17,9 @@ public class Gun : Weapon
         Vector2 spawnPosition = transform.position;        
         Vector2 direction = (targetPos - spawnPosition).normalized;
 
-        if (bulletPrefab != null)
+        if (_projectilePrefab != null)
         {
-            GameObject cloneBullet = Instantiate(bulletPrefab, spawnPosition, Quaternion.identity);  
+            GameObject cloneBullet = Instantiate(_projectilePrefab, spawnPosition, Quaternion.identity);  
             cloneBullet.gameObject.GetComponent<Bullet>().Shoot(direction);        
         }
         else

@@ -5,6 +5,8 @@ using UnityEngine.Device;
 
 public class MouseGun : Weapon
 {
+    [SerializeField] private GameObject _projectilePrefab;
+
     [SerializeField] public Transform _firePoint;
     protected override void Shoot()
     {

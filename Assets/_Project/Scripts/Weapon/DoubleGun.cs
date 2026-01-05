@@ -5,7 +5,7 @@ using UnityEngine.Rendering;
 
 public class DoubleGun : Weapon
 {
-    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private GameObject _projectilePrefab;
 
     // Start is called before the first frame update
     protected override void Shoot()
@@ -18,7 +18,7 @@ public class DoubleGun : Weapon
     private void FireShoot(Vector2 spawnPosition , Vector2 direction)
     {
 
-        GameObject projectile = Instantiate (bulletPrefab, spawnPosition,Quaternion.identity);
+        GameObject projectile = Instantiate (_projectilePrefab, spawnPosition,Quaternion.identity);
         Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
        
         
