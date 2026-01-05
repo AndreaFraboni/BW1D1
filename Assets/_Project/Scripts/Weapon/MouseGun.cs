@@ -9,12 +9,15 @@ public class MouseGun : Weapon
     protected override void Shoot()
     {
         _lastShoot = Time.time;
+        
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePosition.z = 0;
         Vector3 spawnPosition = _firePoint.position;
         Vector2 fireDirection = (mousePosition  - spawnPosition).normalized;
         GameObject projectile = Instantiate (_projectilePrefab, spawnPosition, Quaternion.identity);
+        
         Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
+        
         //rb.velocity = fireDirection * _projectileSpeed;
 
     }

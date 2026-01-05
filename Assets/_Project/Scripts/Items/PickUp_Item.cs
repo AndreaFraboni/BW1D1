@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class PickUp_Item : MonoBehaviour
 {
-    public enum itemType {addHealth, weapon}
+    public enum itemType 
+    {
+        addHealth, 
+        weapon
+    }
+
     [SerializeField] public int _health = 10;
     [SerializeField] public itemType typeItem;
 

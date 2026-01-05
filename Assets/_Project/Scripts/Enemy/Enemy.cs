@@ -169,7 +169,7 @@ public class Enemy : MonoBehaviour
     {
         if (other.CompareTag("Projectile"))
         {
-            Destroy(other.gameObject);// L'ho messo qui, ma creo che volendo lo si può distruggere direttamente dallo Script Projectile
+            Destroy(other.gameObject);// L'ho messo qui, ma credo che volendo lo si può distruggere direttamente dallo Script Projectile
             TakeDamage(1);
         }
     }

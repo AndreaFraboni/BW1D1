@@ -9,7 +9,9 @@ public class Weapon : MonoBehaviour
 
     [SerializeField] private float _fireRate = 3f;
     [SerializeField] protected float _fireRange = 5f;
-    
+
+    protected EnemiesManager _enemiesRegister;
+
     protected float _lastShoot = 0f;
     
     protected bool IfShoot()
@@ -38,4 +40,24 @@ public class Weapon : MonoBehaviour
             Shoot();
         }
     }
+
+    protected GameObject FindNearestEnemy()
+    {
+        GameObject NearstEnemyFounded = null;
+
+        float nearstDistance = _fireRange;
+
+        foreach (Enemy currentEnemy in _enemiesRegister.listEnemies)
+        {
+            float CurDistance = Vector2.Distance(transform.position, currentEnemy.transform.position);
+            if (CurDistance < nearstDistance)
+            {
+                nearstDistance = CurDistance;
+                NearstEnemyFounded = currentEnemy.gameObject;
+            }
+        }
+        return NearstEnemyFounded;
+    }
+
+
 }
