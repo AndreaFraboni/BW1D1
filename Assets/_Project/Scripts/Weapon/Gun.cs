@@ -4,14 +4,30 @@ using UnityEngine;
 
 public class Gun : Weapon
 {
-   protected override void Shoot()
+    [SerializeField] private GameObject bulletPrefab;
+
+    protected override void Shoot()
     {
         _lastShoot = Time.time;
-        
-        Vector2 spanwPosition = transform.position;        
-        Vector2 fireDirection = Vector2.up;
-        
-        GameObject projectile = Instantiate (_projectilePrefab , spanwPosition ,  Quaternion.identity);
+
+        GameObject Target = FindNearestEnemy();
+        if (Target == null) return;
+
+        Vector2 targetPos = Target.GetComponent<Rigidbody2D>().position;
+        Vector2 spawnPosition = transform.position;        
+        Vector2 direction = (targetPos - spawnPosition).normalized;
+
+        if (bulletPrefab != null)
+        {
+            GameObject cloneBullet = Instantiate(bulletPrefab, spawnPosition, Quaternion.identity);  
+            cloneBullet.gameObject.GetComponent<Bullet>().Shoot(direction);        
+        }
+        else
+        {
+            Debug.Log("Non hai assegnato il Prefab del Bullet !!!");
+            return;
+        }
+
     }
 
 }   

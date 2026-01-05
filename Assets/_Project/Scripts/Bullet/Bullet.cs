@@ -5,9 +5,13 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    [SerializeField] public int bulletDamage = 1;
-    [SerializeField] public float lifeSpan = 6f;
-    [SerializeField] protected float _speed = 4f;
+    [SerializeField] private int bulletDamage = 10;
+    [SerializeField] private float lifeSpan = 6f;
+
+    [SerializeField] private float speed = 5f;
+
+    private Rigidbody2D _rb;
+    private Vector2 direction;
 
     public void SetBullet(int _bulletdamage, float _lifespan)
     {
@@ -15,4 +19,33 @@ public class Bullet : MonoBehaviour
         lifeSpan = _lifespan;
     }
 
+    private void Awake()
+    {
+        _rb = GetComponent<Rigidbody2D>();
+    }
+
+    private void Start()
+    {
+        Destroy(gameObject, lifeSpan);
+    }
+
+    private void FixedUpdate()
+    {
+        _rb.MovePosition(_rb.position + direction * (speed * Time.deltaTime));
+    }
+
+    public void Shoot(Vector2 dir)
+    {
+        float sqrMagnitude = dir.sqrMagnitude;
+        if (sqrMagnitude > 1)
+        {
+            dir /= Mathf.Sqrt(sqrMagnitude);
+        }
+        direction = dir;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+    }
 }

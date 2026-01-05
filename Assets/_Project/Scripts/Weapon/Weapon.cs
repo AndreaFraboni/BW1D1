@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    [SerializeField] protected GameObject _projectilePrefab;
+    [SerializeField] public string _weaponId = "Set Weapon Id here !!!";
 
     [SerializeField] private float _fireRate = 3f;
     [SerializeField] protected float _fireRange = 5f;
