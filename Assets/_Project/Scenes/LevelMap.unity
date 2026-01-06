@@ -18534,7 +18534,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &641219648
 Transform:
   m_ObjectHideFlags: 0
@@ -23541,7 +23541,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1007190046
 Transform:
   m_ObjectHideFlags: 0
@@ -34804,7 +34804,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1169466383
 Transform:
   m_ObjectHideFlags: 0
@@ -63246,9 +63246,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7363852129778799229, guid: d4a20c09278747a488bb980af0610790, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.72
+      objectReference: {fileID: 0}
     - target: {fileID: 8771734046789566020, guid: d4a20c09278747a488bb980af0610790, type: 3}
       propertyPath: m_Name
       value: gun1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8771734046789566020, guid: d4a20c09278747a488bb980af0610790, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

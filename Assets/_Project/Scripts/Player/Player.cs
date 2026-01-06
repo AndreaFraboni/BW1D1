@@ -9,6 +9,8 @@ public class Player : MonoBehaviour
     [SerializeField] private float _speed = 2f;
     [SerializeField] private Transform _weaponMountPoint;
 
+    [SerializeField] GameObject _initialWeaponPrefab;
+
     private Weapon _currentWeapon;
     private GameObject _gameObjectWeapon;
 
@@ -28,6 +30,8 @@ public class Player : MonoBehaviour
         if (_rb == null) _rb = GetComponent<Rigidbody2D>();
         if (_collider2D == null) _collider2D = GetComponent<CircleCollider2D>();
         if (_animParam == null) _animParam = GetComponent<AnimationParamHandler>();
+
+        if (_initialWeaponPrefab) MountWeapon(_initialWeaponPrefab);
     }
 
     void Update()
@@ -37,7 +41,11 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (isAlive) Move();
+        if (isAlive)
+        {
+            Move();
+            OrientWeapon();
+        }
     }
 
     void CheckInput()
@@ -63,6 +71,11 @@ public class Player : MonoBehaviour
     void Move()
     {
         _rb.MovePosition(_rb.position + direction * (_speed * Time.deltaTime));
+    }
+
+    void OrientWeapon()
+    {
+        _gameObjectWeapon.transform.up = direction;
     }
 
     public void GetItem(string itemName, int value)
@@ -114,7 +127,6 @@ public class Player : MonoBehaviour
             if (_gameObjectWeapon != null) Destroy(_gameObjectWeapon);
             _gameObjectWeapon = Instantiate(_weaponPrefab);
             _gameObjectWeapon.transform.SetParent(_weaponMountPoint, false);
-
             _currentWeapon = _gameObjectWeapon.GetComponent<Weapon>();
         }
     }
