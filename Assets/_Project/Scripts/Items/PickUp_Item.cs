@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PickUp_Item : MonoBehaviour
 {
-    public enum itemType 
+    public enum itemType
     {
-        addHealth, 
+        addHealth,
         weapon
     }
 
@@ -15,7 +15,7 @@ public class PickUp_Item : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag(Tags.Player))
         {
             switch (typeItem)
             {

@@ -5,26 +5,26 @@ using UnityEngine;
 public class EnemyGun : Weapon
 {
     [SerializeField] private GameObject _projectilePrefab;
-
     [SerializeField] private Transform _player;
+
     // Start is called before the first frame update
     void Start()
     {
-        GameObject playerObj = GameObject.FindWithTag("Player");
+        GameObject playerObj = GameObject.FindWithTag(Tags.Player);
         _player = playerObj.transform;
     }
 
     protected override void Shoot()
     {
         _lastShoot = Time.time;
-        
+
         Vector2 spawnPosition = transform.position;
         Vector2 targetPosition = _player.position;
         Vector2 direction = (targetPosition - spawnPosition).normalized;
         GameObject projectile = Instantiate(_projectilePrefab, spawnPosition, Quaternion.identity);
-        
+
         Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
-       
+
         //rb.velocity = direction * _projectileSpeed;
     }
 
@@ -36,7 +36,8 @@ public class EnemyGun : Weapon
         {
             base.Update();
         }
-       
-        
     }
+
+
+
 }

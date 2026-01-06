@@ -161,7 +161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 922707c5c23d36b46af32a2942c1c2a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _weaponId: Set Weapon Id here !!!
+  _weaponId: gun1
   _fireRate: 3
   _fireRange: 5
   _projectilePrefab: {fileID: 1358254410109819848, guid: 656c5e19f5ee14c40819502e1d90ac54, type: 3}

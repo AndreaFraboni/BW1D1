@@ -39,7 +39,7 @@ public class Enemy : MonoBehaviour
     {
         if (_rb == null) _rb = GetComponent<Rigidbody2D>();
         if (_Collider2D == null) _Collider2D = GetComponent<CircleCollider2D>();
-        if (_animParam==null) _animParam = GetComponent<AnimationParamHandler>();
+        if (_animParam == null) _animParam = GetComponent<AnimationParamHandler>();
 
         _enemiesManager = FindObjectOfType<EnemiesManager>(); // prendo riferimento all'Enemies Manager in scena
         if (!_enemiesManager) Debug.LogError("EnemiesManager is not present in Scene !!!!");
@@ -70,7 +70,7 @@ public class Enemy : MonoBehaviour
     {
         if (_playerTarget == null)
         {
-            GameObject playerObject = GameObject.FindWithTag("Player");
+            GameObject playerObject = GameObject.FindWithTag(Tags.Player);
             if (playerObject != null)
             {
                 _playerTarget = playerObject.transform;
@@ -108,8 +108,8 @@ public class Enemy : MonoBehaviour
 
     protected void MoveWayPoint(Vector2 destination)
     {
-        direction = (destination - (Vector2)transform.position).normalized;        
-        isWalking = direction != Vector2.zero;        
+        direction = (destination - (Vector2)transform.position).normalized;
+        isWalking = direction != Vector2.zero;
         _animParam.SetBoolParam("isWalking", isWalking);
         if (isWalking)
         {
@@ -167,9 +167,9 @@ public class Enemy : MonoBehaviour
 
     protected virtual void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Projectile"))
+        if (other.CompareTag(Tags.Projectile))
         {
-            Destroy(other.gameObject);// L'ho messo qui, ma credo che volendo lo si può distruggere direttamente dallo Script Projectile
+            Destroy(other.gameObject);       // L'ho messo qui, ma credo che volendo lo si può distruggere direttamente dallo Script Projectile
             TakeDamage(1);
         }
     }

@@ -7,9 +7,14 @@ using static UnityEditor.Searcher.SearcherWindow.Alignment;
 public class Player : MonoBehaviour
 {
     [SerializeField] private float _speed = 2f;
+    [SerializeField] private Transform _weaponMountPoint;
+
+    private Weapon _currentWeapon;
+    private GameObject _gameObjectWeapon;
 
     public float h, v;
-    private Vector2 _movedir;
+
+    public Vector2 direction;
 
     private Rigidbody2D _rb;
     private CircleCollider2D _collider2D;
@@ -37,27 +42,27 @@ public class Player : MonoBehaviour
 
     void CheckInput()
     {
-            h = Input.GetAxis("Horizontal");
-            v = Input.GetAxis("Vertical");
+        h = Input.GetAxis("Horizontal");
+        v = Input.GetAxis("Vertical");
 
-            _movedir = new Vector2(h, v);
+        direction = new Vector2(h, v);
 
-            isWalking = _movedir != Vector2.zero;
+        isWalking = direction != Vector2.zero;
 
-            _animParam.SetBoolParam("isWalking", isWalking);
+        _animParam.SetBoolParam("isWalking", isWalking);
 
-            if (isWalking)
-            {
-                _animParam.SetVerticalSpeedParam(v);
-                _animParam.SetHorizontalSpeedParam(h);
-            }
+        if (isWalking)
+        {
+            _animParam.SetVerticalSpeedParam(v);
+            _animParam.SetHorizontalSpeedParam(h);
+        }
 
-            if (_movedir.sqrMagnitude > 1f) _movedir = _movedir.normalized;
+        if (direction.sqrMagnitude > 1f) direction = direction.normalized;
     }
 
     void Move()
     {
-        _rb.MovePosition(_rb.position + _movedir * (_speed * Time.deltaTime));
+        _rb.MovePosition(_rb.position + direction * (_speed * Time.deltaTime));
     }
 
     public void GetItem(string itemName, int value)
@@ -80,6 +85,38 @@ public class Player : MonoBehaviour
     public void DestroyGOplayer()
     {
         Destroy(gameObject);
+    }
+
+
+    public void MountWeapon(GameObject _weaponPrefab)
+    {
+        if (_weaponPrefab == null)
+        {
+            Debug.LogError("Errore la weaponPrefab risulta essere null !!!!");
+            return;
+        }
+
+        Weapon _weapon = _weaponPrefab.GetComponent<Weapon>();
+        if (_weapon == null)
+        {
+            Debug.LogError("Il weaponPrefab del pickup NON risulta essere una Weapon !!!!");
+            return;
+        }
+
+        if (_currentWeapon != null && _currentWeapon._weaponId == _weapon._weaponId)
+        {
+            Debug.Log("Stiamo montando la stessa arma che abbiamo adesso !!!!");
+            //_currentWeapon increase weapon parameters
+            return;
+        }
+        else
+        {
+            if (_gameObjectWeapon != null) Destroy(_gameObjectWeapon);
+            _gameObjectWeapon = Instantiate(_weaponPrefab);
+            _gameObjectWeapon.transform.SetParent(_weaponMountPoint, false);
+
+            _currentWeapon = _gameObjectWeapon.GetComponent<Weapon>();
+        }
     }
 
 

@@ -28,7 +28,7 @@ public class LifeHandler : MonoBehaviour
         }
     }
 
-    private string GetName() => name;
+    //private string GetName() => name;
     public void SetName(string nome) => name = nome;
     public int GetHp() => _hp;
     public int GetLives() => _lives;
@@ -78,16 +78,15 @@ public class LifeHandler : MonoBehaviour
 
     private void Defeated()
     {
-        if (this.CompareTag("Enemy"))
+        if (this.CompareTag(Tags.Enemy))
         {
-  
-            if (_enemyController != null) _enemyController.EnemyDeath();
+            if (_enemyController != null) _enemyController.EnemyDeath(); // nemico morto ....
             return;
         }
 
-        if (this.CompareTag("Player"))
+        if (this.CompareTag(Tags.Player))
         {
-            if (_playerController != null) _playerController.PlayerDeath();
+            if (_playerController != null) _playerController.PlayerDeath(); // player morto ....
             return;
         }
     }

@@ -7,7 +7,6 @@ public class Bullet : MonoBehaviour
 {
     [SerializeField] private int bulletDamage = 10;
     [SerializeField] private float lifeSpan = 6f;
-
     [SerializeField] private float speed = 5f;
 
     private Rigidbody2D _rb;
@@ -21,7 +20,7 @@ public class Bullet : MonoBehaviour
 
     private void Awake()
     {
-        _rb = GetComponent<Rigidbody2D>();
+        if (_rb == null) _rb = GetComponent<Rigidbody2D>();
     }
 
     private void Start()
@@ -46,6 +45,15 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
+        if (collision.gameObject.TryGetComponent<LifeHandler>(out LifeHandler _LifeHandler))
+        {
+            _LifeHandler.TakeDamage(bulletDamage); // ok ho trovato un LifeHandler quindi gli procuro danno 
+            Destroy(gameObject);                   // e poi mi distruggo !!!
+        }
+        else
+        {
+            Destroy(gameObject); // l'oggetto colpito non ha un Lifehandler quindi mi distruggo soltanto !!!
+            return;
+        }
     }
 }

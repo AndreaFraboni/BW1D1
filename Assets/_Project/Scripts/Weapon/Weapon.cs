@@ -6,12 +6,10 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     [SerializeField] public string _weaponId = "Set Weapon Id here !!!";
-
     [SerializeField] private float _fireRate = 3f;
     [SerializeField] protected float _fireRange = 5f;
 
     protected EnemiesManager _enemiesRegister;
-
     protected float _lastShoot = 0f;
 
     protected virtual void Awake()
@@ -38,7 +36,7 @@ public class Weapon : MonoBehaviour
         {
             return false;
         }
-       
+
     }
     protected virtual void Shoot()
     {
@@ -46,7 +44,6 @@ public class Weapon : MonoBehaviour
     }
     public virtual void Update()
     {
-
         if (IfShoot())
         {
             Shoot();
