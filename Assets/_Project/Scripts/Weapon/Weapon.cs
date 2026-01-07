@@ -9,8 +9,13 @@ public class Weapon : MonoBehaviour
     [SerializeField] private float _fireRate = 3f;
     [SerializeField] protected float _fireRange = 5f;
 
+    public GameObject _projectilePrefab;
+    public Transform _shootPoint;
+
     protected EnemiesManager _enemiesRegister;
     protected float _lastShoot = 0f;
+
+    public Player _playerController;
 
     protected virtual void Awake()
     {
@@ -38,15 +43,17 @@ public class Weapon : MonoBehaviour
         }
 
     }
-    protected virtual void Shoot()
+    protected virtual void Shoot(Vector2 direction)
     {
 
     }
     public virtual void Update()
     {
+        _playerController.OrientWeapon();
+
         if (IfShoot())
         {
-            Shoot();
+            Shoot(_playerController._lastDirection);
         }
     }
 

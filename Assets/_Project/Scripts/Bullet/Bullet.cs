@@ -50,10 +50,7 @@ public class Bullet : MonoBehaviour
             _LifeHandler.TakeDamage(bulletDamage); // ok ho trovato un LifeHandler quindi gli procuro danno 
             Destroy(gameObject);                   // e poi mi distruggo !!!
         }
-        else
-        {
-            Destroy(gameObject); // l'oggetto colpito non ha un Lifehandler quindi mi distruggo soltanto !!!
-            return;
-        }
+
+        Destroy(gameObject); // l'oggetto colpito non ha un Lifehandler quindi mi distruggo soltanto !!!
     }
 }

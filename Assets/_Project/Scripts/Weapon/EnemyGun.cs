@@ -14,13 +14,15 @@ public class EnemyGun : Weapon
         _player = playerObj.transform;
     }
 
-    protected override void Shoot()
+    protected override void Shoot(Vector2 direction)
     {
         _lastShoot = Time.time;
 
         Vector2 spawnPosition = transform.position;
         Vector2 targetPosition = _player.position;
-        Vector2 direction = (targetPosition - spawnPosition).normalized;
+
+        //Vector2 dir = (targetPosition - spawnPosition).normalized;
+
         GameObject projectile = Instantiate(_projectilePrefab, spawnPosition, Quaternion.identity);
 
         Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();

@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     public float h, v;
 
     public Vector2 direction;
+    public Vector2 _lastDirection = Vector2.down; // start with down orientation
 
     private Rigidbody2D _rb;
     private CircleCollider2D _collider2D;
@@ -63,6 +64,8 @@ public class Player : MonoBehaviour
         {
             _animParam.SetVerticalSpeedParam(v);
             _animParam.SetHorizontalSpeedParam(h);
+
+            _lastDirection = direction.normalized;
         }
 
         if (direction.sqrMagnitude > 1f) direction = direction.normalized;
@@ -73,9 +76,10 @@ public class Player : MonoBehaviour
         _rb.MovePosition(_rb.position + direction * (_speed * Time.deltaTime));
     }
 
-    void OrientWeapon()
+    public void OrientWeapon()
     {
-        _gameObjectWeapon.transform.up = direction;
+        if (_gameObjectWeapon == null) return;
+        _gameObjectWeapon.transform.up = _lastDirection;
     }
 
     public void GetItem(string itemName, int value)
@@ -128,6 +132,8 @@ public class Player : MonoBehaviour
             _gameObjectWeapon = Instantiate(_weaponPrefab);
             _gameObjectWeapon.transform.SetParent(_weaponMountPoint, false);
             _currentWeapon = _gameObjectWeapon.GetComponent<Weapon>();
+            _currentWeapon._playerController = this;
+            OrientWeapon();
         }
     }
 
