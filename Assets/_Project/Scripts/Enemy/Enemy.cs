@@ -165,14 +165,6 @@ public class Enemy : MonoBehaviour
         _rb.velocity = Vector2.zero;
     }
 
-    protected virtual void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag(Tags.Projectile))
-        {
-            Destroy(other.gameObject);       // L'ho messo qui, ma credo che volendo lo si può distruggere direttamente dallo Script Projectile
-            TakeDamage(1);
-        }
-    }
     protected virtual void Die()
     {
         Debug.Log(gameObject.name + "è morto");

@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 8631944564652477218}
   - component: {fileID: 5685572556548561757}
   - component: {fileID: 2304424592177460228}
+  - component: {fileID: 6751979261012983013}
   m_Layer: 0
   m_Name: EnemyChase
   m_TagString: Untagged
@@ -89,6 +90,7 @@ MonoBehaviour:
   _playerTarget: {fileID: 0}
   isWalking: 0
   isAlive: 1
+  direction: {x: 0, y: 0}
 --- !u!61 &8631944564652477218
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -175,6 +177,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _verticalSpeedParamName: vSpeed
   _horizontalSpeedParamName: hSpeed
+--- !u!114 &6751979261012983013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7496345038551302453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d338dae60b5780e4483387c12219918e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hp: 100
+  _maxHp: 100
+  _lives: 1
 --- !u!1 &8881357712948868652
 GameObject:
   m_ObjectHideFlags: 0
