@@ -48,7 +48,6 @@ public class Bullet : MonoBehaviour
         if (collision.gameObject.TryGetComponent<LifeHandler>(out LifeHandler _LifeHandler))
         {
             _LifeHandler.TakeDamage(bulletDamage); // ok ho trovato un LifeHandler quindi gli procuro danno 
-            Destroy(gameObject);                   // e poi mi distruggo !!!
         }
 
         Destroy(gameObject); // l'oggetto colpito non ha un Lifehandler quindi mi distruggo soltanto !!!
