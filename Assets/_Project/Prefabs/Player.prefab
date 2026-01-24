@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d89b8c2ba3129f4a84de6f8e18958bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 2
+  _speed: 2.5
   _weaponMountPoint: {fileID: 7037370818843422453}
   _initialWeaponPrefab: {fileID: 8771734046789566020, guid: d4a20c09278747a488bb980af0610790, type: 3}
   h: 0

@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 2214683697360664014}
   m_Layer: 0
   m_Name: EnemyRandom
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82,7 +82,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rangeEnemy: 7
-  _moveSpeed: 2
+  _moveSpeed: 1
   _stopDistance: 0.1
   _maxHealth: 1
   _dropChance: 0.15
@@ -193,7 +193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _hp: 100
   _maxHp: 100
-  _lives: 2
+  _lives: 3
 --- !u!1 &6100534220281886600
 GameObject:
   m_ObjectHideFlags: 0

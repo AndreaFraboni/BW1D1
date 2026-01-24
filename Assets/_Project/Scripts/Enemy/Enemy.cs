@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Windows;
+using static UnityEngine.GraphicsBuffer;
 
 public class Enemy : MonoBehaviour
 {
@@ -200,12 +201,25 @@ public class Enemy : MonoBehaviour
         if (_Collider2D != null) _Collider2D.enabled = false;
         if (_rb != null) _rb.simulated = false;
 
-        //_enemyAnimation.SetBoolParam("isDying", true);
+       _animParam.SetBoolParam("isDying", true);
     }
 
     public void DestroyGOenemy()
     {
         Destroy(gameObject);
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision != null)
+        {
+            if (collision.gameObject.CompareTag(Tags.Player))
+            {
+                _playerTarget.gameObject.GetComponent<Player>().PlayerDeath();
+                DestroyGOenemy();
+            }
+        }
+    }
+
 
 }

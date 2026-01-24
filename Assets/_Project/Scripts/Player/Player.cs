@@ -96,7 +96,7 @@ public class Player : MonoBehaviour
         if (_collider2D != null) _collider2D.enabled = false;
         if (_rb != null) _rb.simulated = false;
 
-        //_PlayerAnimation.SetBoolParam("isDying", true);
+        _animParam.SetBoolParam("isDying", true);
     }
 
     public void DestroyGOplayer()

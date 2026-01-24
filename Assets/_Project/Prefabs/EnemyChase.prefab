@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 6751979261012983013}
   m_Layer: 0
   m_Name: EnemyChase
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82,7 +82,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rangeEnemy: 7
-  _moveSpeed: 2
+  _moveSpeed: 1
   _stopDistance: 0.1
   _maxHealth: 1
   _dropChance: 0.15
