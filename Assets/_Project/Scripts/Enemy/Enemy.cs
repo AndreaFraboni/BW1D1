@@ -19,6 +19,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected int _maxHealth = 1;
     [SerializeField] protected float _dropChance = 0.15f;
     [SerializeField] protected GameObject _lootWeapon;
+    [SerializeField] protected GameObject _DropEnergy;
     [SerializeField] protected Transform _playerTarget;
 
     protected EnemiesManager _enemiesManager;
@@ -182,15 +183,14 @@ public class Enemy : MonoBehaviour
 
         if (randomnumber > 0 && randomnumber < 10)
         {
-            // TO DO : aggiungere drop arMA !
-            //if (Random.value <= _dropChance)
-            //{
-            //    Instantiate(_lootWeapon, transform.position, Quaternion.identity);
-            //}
+            if (Random.value <= _dropChance)
+            {
+                Instantiate(_lootWeapon, transform.position, Quaternion.identity);
+            }
         }
         else
         {
-            // TO DO : aggiungere drop energia
+            Instantiate(_DropEnergy, transform.position, Quaternion.identity);
         }
     }
 
@@ -206,6 +206,8 @@ public class Enemy : MonoBehaviour
 
     public void DestroyGOenemy()
     {
+        DropLoot();
+
         Destroy(gameObject);
     }
 

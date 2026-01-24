@@ -86,7 +86,8 @@ MonoBehaviour:
   _stopDistance: 0.1
   _maxHealth: 1
   _dropChance: 0.15
-  _lootWeapon: {fileID: 0}
+  _lootWeapon: {fileID: 4603072538890878596, guid: 8b32c003fc750f54d9df4661359dd047, type: 3}
+  _DropEnergy: {fileID: 7022037917673768640, guid: 089c582598a026d488178bb7ec526e6b, type: 3}
   _playerTarget: {fileID: 0}
   isWalking: 0
   isAlive: 1
