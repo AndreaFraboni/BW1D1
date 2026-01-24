@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class DownGun : Weapon
 {
-    [SerializeField] private GameObject _projectilePrefab;
-
     protected override void Shoot(Vector2 direction)
     {
         _lastShoot = Time.time;
@@ -17,10 +15,7 @@ public class DownGun : Weapon
 
         Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
 
-
         // rb.velocity = fireDirection * _projectileSpeed;
-
-
     }
 
 }

@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
         if (_collider2D == null) _collider2D = GetComponent<CircleCollider2D>();
         if (_animParam == null) _animParam = GetComponent<AnimationParamHandler>();
 
-        if (_initialWeaponPrefab) MountWeapon(_initialWeaponPrefab);
+        //if (_initialWeaponPrefab) MountWeapon(_initialWeaponPrefab);
     }
 
     void Update()

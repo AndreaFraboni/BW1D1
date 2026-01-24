@@ -8,6 +8,8 @@ public class Weapon : MonoBehaviour
     [SerializeField] public string _weaponId = "Set Weapon Id here !!!";
     [SerializeField] private float _fireRate = 3f;
     [SerializeField] protected float _fireRange = 5f;
+    [SerializeField] protected float _fireRateUpValue = 0.1f;
+    [SerializeField] protected float _fireRangeUpValue = 0.5f;
 
     public GameObject _projectilePrefab;
     public Transform _shootPoint;
@@ -73,6 +75,24 @@ public class Weapon : MonoBehaviour
             }
         }
         return NearstEnemyFounded;
+    }
+
+    // setter    
+    public void SetFireRate(float amount)
+    {
+        _fireRate = _fireRate - amount;
+        if (_fireRate < 0.1f) _fireRate = 0.1f;
+    }
+    public void SetFireRange(float amount)
+    {
+        _fireRange = _fireRange + amount;
+        if (_fireRange >= 10) _fireRange = 10;
+    }
+
+    public virtual void UpdateFireParams()
+    {
+
+
     }
 
 

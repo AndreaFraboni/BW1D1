@@ -26,13 +26,15 @@ public class Gun : Weapon
         //    return;
         //}
 
-
         Vector2 _spawnPoint = _shootPoint.transform.position;
         GameObject cloneBullet = Instantiate(_projectilePrefab, _spawnPoint, Quaternion.identity);
         cloneBullet.gameObject.GetComponent<Bullet>().Shoot(direction);
+    }
 
-
-
+    public override void UpdateFireParams()
+    {
+        SetFireRange(_fireRangeUpValue);
+        SetFireRate(_fireRateUpValue);
     }
 
 }
