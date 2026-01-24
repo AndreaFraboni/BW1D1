@@ -137,5 +137,9 @@ public class Player : MonoBehaviour
         }
     }
 
+    public void GetCoins()
+    {
+        // TO DO 
+    }
 
 }
