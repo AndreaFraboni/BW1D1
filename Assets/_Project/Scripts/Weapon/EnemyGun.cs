@@ -22,21 +22,20 @@ public class EnemyGun : Weapon
         Vector2 targetPosition = _player.position;
 
         //Vector2 dir = (targetPosition - spawnPosition).normalized;
-
         GameObject projectile = Instantiate(_projectilePrefab, spawnPosition, Quaternion.identity);
-
         Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
-
         //rb.velocity = direction * _projectileSpeed;
     }
 
     public override void Update()
     {
         if (_player == null) return;
+
         float distanceTarget = Vector2.Distance(transform.position, _player.position);
+        
         if (distanceTarget <= _fireRange)
         {
-            base.Update();
+            //base.Update();
         }
     }
 

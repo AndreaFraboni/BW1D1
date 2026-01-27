@@ -156,8 +156,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5736036737171324149}
-  - component: {fileID: 3106267895682175048}
   - component: {fileID: 5419406585822885944}
+  - component: {fileID: 8327114968134341088}
   m_Layer: 6
   m_Name: EnemyGun
   m_TagString: Weapon
@@ -182,26 +182,6 @@ Transform:
   - {fileID: 1091529584320056724}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3106267895682175048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8771734046789566020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 922707c5c23d36b46af32a2942c1c2a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _weaponId: EnemyGun
-  _fireRate: 0.5
-  _fireRange: 5
-  _fireRateUpValue: 0.1
-  _fireRangeUpValue: 0.5
-  _projectilePrefab: {fileID: 1358254410109819848, guid: 656c5e19f5ee14c40819502e1d90ac54, type: 3}
-  _shootPoint: {fileID: 1091529584320056724}
-  _playerController: {fileID: 0}
 --- !u!212 &5419406585822885944
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -254,3 +234,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8327114968134341088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8771734046789566020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fdac7c889e64814bb2f2e021dad108a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _weaponId: Set Weapon Id here !!!
+  _fireRate: 3
+  _fireRange: 5
+  _fireRateUpValue: 0.1
+  _fireRangeUpValue: 0.5
+  _projectilePrefab: {fileID: 1358254410109819848, guid: c884a7683d7fa17478f695919e033958, type: 3}
+  _shootPoint: {fileID: 1091529584320056724}
+  _playerController: {fileID: 0}
+  _projectilePrefab: {fileID: 0}
+  _player: {fileID: 0}
